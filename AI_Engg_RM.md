@@ -101,10 +101,30 @@ This is where things get interesting. ML is teaching computers to learn patterns
 ### Supervised Learning
 You give the model inputs AND the correct answers. It learns the pattern.
 
-- **Regression** — predict a number (e.g., house price)
-- **Classification** — predict a category (e.g., spam or not spam)
-- **Key algorithms to know:** Linear Regression, Logistic Regression, Decision Trees, Random Forest
-- **Key concepts:** train/test split, overfitting, underfitting, accuracy, loss
+**Regression** — when you want to predict the numbers such as crickt score or House Price etc
+
+| Model | What it does | When to use |
+|---|---|---|
+| **Linear Regression** | Draws a straight line through data | Simple relationships (e.g., hours studied → exam score) |
+| **Polynomial Regression** | Draws a curve instead of a line | When the relationship isn't straight (e.g., speed → fuel consumption) |
+| **Ridge / Lasso** | Linear regression + a penalty for complexity | When your model is overfitting — too good on training data, bad on new data |
+| **Decision Tree** | Splits data into yes/no branches | Easy to explain, works on messy data |
+| **Random Forest** | 100 decision trees vote together | More accurate than one tree, harder to overfit |
+| **Gradient Boosting (XGBoost)** | Trees that learn from each other's mistakes | Competition-winning model. If in doubt, try this. |
+
+> Why does this matter for later? Linear Regression teaches you loss functions and gradient descent — the same ideas that power neural networks. The math scales up, but the intuition is the same.
+
+**Key concepts to understand alongside these:**
+- **Train/Test Split** — never test on the data you trained on. That's like memorizing exam answers, not learning.
+- **Overfitting** — model is too specific to training data, fails on real data
+- **Underfitting** — model is too simple, misses the pattern entirely
+- **Loss function** — how wrong is the model? (MSE for regression: average of squared errors)
+- **Gradient Descent** — the algorithm that nudges the model to reduce that loss. This is the backbone of everything in deep learning.
+
+**Classification** — when the output is a category (spam/not spam, cat/dog).
+- **Logistic Regression** — despite the name, it's for classification. Outputs a probability between 0 and 1.
+- Same tree-based models above work for classification too.
+- **Key metric:** Accuracy, Precision, Recall — don't just trust accuracy, it lies on imbalanced data.
 
 **Example:** You show the model 10,000 emails labeled "spam" or "not spam." It learns what spam looks like. Now show it a new email — it predicts.
 
