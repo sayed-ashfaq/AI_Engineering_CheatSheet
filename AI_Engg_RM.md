@@ -348,4 +348,38 @@ The job is on the other side of the projects, not the other side of more studyin
 
 ---
 
+# Resources — Where to Actually Learn This
+
+> Pick one source per topic. Watch it. Build something. Move on. Don't collect courses like Pokémon.
+
+### YouTube (Free, Start Here)
+
+| What you're learning | Channel |
+|---|---|
+| ML & Stats fundamentals | StatQuest with Josh Starmer |
+| ML, DL, GenAI end-to-end | Krish Naik |
+| Deep Learning, PyTorch | Andrej Karpathy, Stanford lectures |
+| LLMs, Agents, AI Engineering | Sam Witteveen |
+| System Design basics | ByteByteGo |
+
+### Courses (Pick One, Not All)
+
+- **Fast.ai** — best practical deep learning course. Free. Starts with code, explains theory after. Unusual but effective.
+- **DeepLearning.AI short courses** — Andrew Ng. Bite-sized. Great for RAG, Agents, Prompt Engineering specifically.
+- **CS229 Stanford (YouTube)** — if you want the math. Free lecture recordings.
+
+### For AI Engineering Specifically
+
+- LangChain and LangGraph official docs — just read the docs, they're actually good
+- Anthropic and OpenAI cookbooks on GitHub — real examples, production patterns
+
+### Practice
+
+- **Kaggle** — datasets, competitions, free notebooks. Best place to get your hands dirty with ML.
+- **LeetCode** — DSA practice. Filter by Easy. Do 30. Stop.
+
+> You don't need all of these. StatQuest + Krish Naik covers 80% of your fundamentals. One DeepLearning.AI course covers the agentic side. The rest is just building.
+
+---
+
 *Last updated: April 2026*
